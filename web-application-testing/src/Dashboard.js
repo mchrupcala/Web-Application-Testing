@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Dashboard = () => {
+    // HERE, CALL HANDLER FUNCTIONS IN APP
     <div>
         <button
         // onClick={}
