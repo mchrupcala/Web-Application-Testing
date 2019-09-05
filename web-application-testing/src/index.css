@@ -14,30 +14,50 @@ code {
 
 
 .display-div {
-  background: red;
   display: flex;
   justify-content: space-between;
-  width: 35%;
+  width: 50%;
   margin: 10px auto;
   
 }
 
 
 .dashboard-div {
-  background: yellow;
-  width: 35%;
+  width: 60%;
   justify-content: space-between;
-  width: 35%;
   margin: 10px auto;
 }
 
 .button {
   margin: 5px;
   border-radius: 10px;
+  background: #D3D3D3;
+  font-weight: bold;
+  border-box: 1px 1px;
 }
 
 .App {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background: #2272B3;
+  box-shadow: 1px 1px;
+  width: 75%;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.scorecard {
+  background: #FF443D;
+  width: 45%;
+}
+
+.outs-scorecard {
+  background: #FF443D;
+  width: 25%;
+  height: 50%;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
 }

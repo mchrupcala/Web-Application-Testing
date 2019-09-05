@@ -13,7 +13,7 @@ const Dashboard = (props) => {
 
             <button
             className="button"
-            onClick={props.strikes}
+            onClick={props.strikeClick}
             >
                 STRIKE
             </button>

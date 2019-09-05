@@ -10,7 +10,7 @@ function App() {
   //IF I HAVE TIME, REFACTOR THESE INTO A CUSTOM HOOK
 const [strikeCount, setStrikeCount] = useState(0);
 const [ballCount, setBallCount] = useState(0);
-const [foulCount, setFoulCount] = useState(0);
+const [outsCount, setOutsCount] = useState(0);
 
 // HANDLER FUNCTIONS //
 const strikes = () => {
@@ -21,11 +21,32 @@ const strikes = () => {
     }
   }
 
+  const outs = () => {
+    if (strikeCount === 2) {
+      if (outsCount < 2) {
+        setOutsCount(outsCount+1);
+        setStrikeCount(0);
+        setBallCount(0);
+      }
+      else {
+        setOutsCount(0);
+        setStrikeCount(0);
+        setBallCount(0);
+      }
+    }
+  }
+
+  const strikeClick = () => {
+    outs();
+    strikes();
+  }
+
   const balls = () => {
     if (ballCount < 3) {
       setBallCount(ballCount+1);
     } else {
       setBallCount(0);
+      setStrikeCount(0);
     }
   }
 
@@ -40,20 +61,23 @@ const strikes = () => {
     setBallCount(0);
   }
 
+
+
   return (
     <div className="App">
 
       <Display 
         strikeCount={strikeCount}
         ballCount={ballCount}
-        foulCount={foulCount}
+        outsCount={outsCount}
         />
 
         <Dashboard 
-        strikes={strikes}
+        // strikes={strikes}
         balls={balls}
         fouls={fouls}
         hit={hit}
+        strikeClick={strikeClick}
         />
       
     </div>
