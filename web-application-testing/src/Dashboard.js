@@ -1,32 +1,34 @@
 import React from 'react';
 
-const Dashboard = () => {
-    // HERE, CALL HANDLER FUNCTIONS IN APP
+const Dashboard = (props) => {
+    return (
+            // HERE, CALL HANDLER FUNCTIONS IN APP
     <div>
-        <button
-        // onClick={}
-        >
-            STRIKE
-        </button>
+    <button
+    onClick={props.strikes}
+    >
+        STRIKE
+    </button>
 
-        <button
-        // onClick={}
-        >
-        BALL
-        </button>
+    <button
+    onClick={props.balls}
+    >
+    BALL
+    </button>
 
-        <button
-        // onClick={}
-        >
-        FOUL
-        </button>
+    <button
+    onClick={props.fouls}
+    >
+    FOUL
+    </button>
 
-        <button
-        // onClick={}
-        >
-        HIT
-        </button>
-    </div>
+    <button
+    onClick={props.hit}
+    >
+    HIT
+    </button>
+</div>
+    )
 }
 
 export default Dashboard;

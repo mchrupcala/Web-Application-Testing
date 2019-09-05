@@ -10,10 +10,6 @@ const Display = (props) => {
         </div>
 
         <div>
-            FOULS: {props.foulCount}
-        </div>
-
-        <div>
             STRIKES: {props.strikeCount}
         </div>
     </div>
