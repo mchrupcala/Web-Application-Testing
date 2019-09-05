@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.display-div {
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  margin: 10px auto;
+  
+}
+
+
+.dashboard-div {
+  background: yellow;
+  width: 35%;
+  justify-content: space-between;
+  width: 35%;
+  margin: 10px auto;
+}
+
+.button {
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -3,14 +3,20 @@ import React from 'react';
 
 const Display = (props) => {
     return (
-        <div>
+        <div className="display-div">
         {/* HERE, DISPLAY SCORE PROPS FROM APP */}
         <div>
-            BALLS: {props.ballCount}
+            <img src='../phillies.jpg' alt="Philadelphia Phillies logo" />
         </div>
 
         <div>
-            STRIKES: {props.strikeCount}
+            <h2>BALLS</h2>
+            <h3>{props.ballCount}</h3>
+        </div>
+
+        <div>
+            <h2>STRIKES</h2>
+            <h3>{props.strikeCount}</h3>
         </div>
     </div>
     )

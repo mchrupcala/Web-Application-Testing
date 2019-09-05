@@ -3,31 +3,35 @@ import React from 'react';
 const Dashboard = (props) => {
     return (
             // HERE, CALL HANDLER FUNCTIONS IN APP
-    <div>
-    <button
-    onClick={props.strikes}
-    >
-        STRIKE
-    </button>
+        <div className="dashboard-div">
+            <button
+            onClick={props.balls}
+            className="button"
+            >
+            BALL
+            </button>
 
-    <button
-    onClick={props.balls}
-    >
-    BALL
-    </button>
+            <button
+            className="button"
+            onClick={props.strikes}
+            >
+                STRIKE
+            </button>
 
-    <button
-    onClick={props.fouls}
-    >
-    FOUL
-    </button>
+            <button
+            onClick={props.fouls}
+            className="button"
+            >
+            FOUL
+            </button>
 
-    <button
-    onClick={props.hit}
-    >
-    HIT
-    </button>
-</div>
+            <button
+            onClick={props.hit}
+            className="button"
+>
+            HIT
+            </button>
+        </div>
     )
 }
 
