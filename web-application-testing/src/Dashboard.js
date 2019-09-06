@@ -5,6 +5,7 @@ const Dashboard = (props) => {
             // HERE, CALL HANDLER FUNCTIONS IN APP
         <div className="dashboard-div">
             <button
+            data-testid="ball-button"
             onClick={props.balls}
             className="button"
             >
@@ -12,6 +13,7 @@ const Dashboard = (props) => {
             </button>
 
             <button
+            data-testid="strike-button"
             className="button"
             onClick={props.strikeClick}
             >
