@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.display-div {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px auto;
+  
+}
+
+
+.dashboard-div {
+  width: 60%;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.button {
+  margin: 5px;
+  border-radius: 10px;
+  background: #D3D3D3;
+  font-weight: bold;
+  border-box: 1px 1px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #2272B3;
+  box-shadow: 1px 1px;
+  width: 75%;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.scorecard {
+  background: #FF443D;
+  width: 45%;
+}
+
+.outs-scorecard {
+  background: #FF443D;
+  width: 25%;
+  height: 50%;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
